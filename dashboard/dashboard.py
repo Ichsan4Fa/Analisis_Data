@@ -51,7 +51,7 @@ def create_rfm_df(df):
     return rfm_df
 
 #Import dataset and formatting dataset
-all_df = pd.read_csv("all_data.csv")
+all_df = pd.read_csv("dashboard/all_data.csv")
 all_df["dteday_y"]=pd.to_datetime(all_df['dteday_y'])
 all_df["dteday_x"]=pd.to_datetime(all_df['dteday_x'])
 datetime_columns = ["dteday_x", "dteday_y"]
